@@ -13,6 +13,7 @@ public class StudayApplication {
         SpringApplication.run(StudayApplication.class, args);
     }
 
+
     @Autowired
     private StudentRepository studentRepository;
 
