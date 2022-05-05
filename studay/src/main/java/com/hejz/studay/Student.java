@@ -25,28 +25,33 @@ public class Student {
     )
     @Column(
             name = "id",
-            nullable = false
+            nullable = false,
+            columnDefinition="bigint COMMENT 'id'"
     )
     private Long id;
     @Column(
             name = "first_name",
-            nullable = false
+            nullable = false,
+            columnDefinition="varchar(100) COMMENT '姓'"
     )
     private String firstName;
     @Column(
             name = "last_name",
-            nullable = false
+            nullable = false,
+            columnDefinition="varchar(100) COMMENT '名'"
     )
     private String lastName;
     @Column(
             name = "email",
-            nullable = false
+            nullable = false,
+            columnDefinition="varchar(100) COMMENT 'email'"
 
     )
     private String email;
     @Column(
             name = "age",
-            nullable = false
+            nullable = false,
+            columnDefinition="int COMMENT '年龄'"
     )
     private Integer age;
 
@@ -55,5 +60,9 @@ public class Student {
         this.lastName = lastName;
         this.email = email;
         this.age = age;
+    }
+
+    public Student() {
+
     }
 }
