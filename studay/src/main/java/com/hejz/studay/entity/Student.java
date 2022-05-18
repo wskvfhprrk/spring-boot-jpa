@@ -1,17 +1,18 @@
-package com.hejz.studay;
+package com.hejz.studay.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity(name = "tb_student")
 @Data
-@Table(
-        name = "tb_student",
-        uniqueConstraints = {
-                @UniqueConstraint(name = "student_email_unique",columnNames = "email")
-        }
-)
+//@Table(
+//        name = "tb_student",
+//        uniqueConstraints = {
+//                @UniqueConstraint(name = "student_email_unique",columnNames = "email")
+//        }
+//)
 public class Student {
     @Id
     @SequenceGenerator(
